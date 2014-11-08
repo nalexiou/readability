@@ -1,0 +1,55 @@
+    <div class="container">
+
+      <div class="starter-template">
+        <h2>Readability stats and score</h2>
+        <p class="lead">Below is the original text submitted, total counts for letter(s), word(s) and sentence(s), and the Coleman-Liau Index score.</p>
+       <p>Original Text:</p>
+       <p><%= text = params[:description] %></p><br>
+
+	<table class="table table-responsive table-condensed table-hover">
+	
+	<tbody>
+	<tr><td>
+	Letter count:
+	</td>
+	<td>
+	<%= lettercount(text).to_s + "*" %> 
+	</td>
+	</tr>
+	<tr><td>
+	Word count:
+	</td>
+	<td>
+	<%= wordcount(text) %> 
+	</td>
+	</tr>
+	<tr><td>
+	Sentence count:
+	</td>
+	<td>
+	<%= sentencecount(text) %> 
+	</td>
+	</tr>
+	<tr><td>
+	Coleman-Liau Index:
+	</td>
+	<td>
+	<%= cli_score(text) %> 
+	</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+	<td colspan="2">*Please note that punctuation is excluded from letter counts.</td>
+	</tr>	
+	</tbody>
+	</table>
+	<a class="btn btn-default" href="/" role="button">Back</a>
+	</div>
+</div>
+
+
+
+    </div><!-- /.container -->
