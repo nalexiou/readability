@@ -27,6 +27,9 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
+
+#used for heroku to include asset pipeline
+gem 'rails_12factor', group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
