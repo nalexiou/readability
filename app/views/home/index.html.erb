@@ -7,7 +7,7 @@
         </p>
 		<%= form_tag(root_path, :method=>'post') do %>
 		 	<% sometext = "Computer Systems Analyst. NYC. Application development for very large, high volume analytical environments. Req’d: MS Comp Sci; 2 yrs exp. job duties. Knowledge of: NodeJS, KnockoutJS, AngularJS, D3js, SignalR, CouchDB, Jasmine, ElasticSearch, OLAP Cubes, Sencha Touch, PhoneGap. M-F, 9-5. Send resume to Job #11, Cross Commerce Media, Inc. 130 Madison Ave, 4th Fl. NY, NY 10016" %>
-		   <%= text_area_tag "description", sometext, rows: "15", class: "form-control",  onclick: "this.focus();this.select()" %>
+		   <%= text_area_tag "description", sometext, rows: "10", class: "form-control",  onclick: "this.focus();this.select()" %>
 		   <br>
 		   <%= submit_tag 'Submit' %>
 		<% end %>
