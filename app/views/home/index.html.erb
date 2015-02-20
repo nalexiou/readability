@@ -6,7 +6,7 @@
         <p class="lead">Use the form below to calculate the text statistics and readability score.<br> 
         </p>
 		<%= form_tag(root_path, :method=>'post') do %>
-		 	<% sometext = "Computer Systems Analyst. NYC. Application development for very large, high volume analytical environments. Req’d: MS Comp Sci; 2 yrs exp. job duties. Knowledge of: NodeJS, KnockoutJS, AngularJS, D3js, SignalR, CouchDB, Jasmine, ElasticSearch, OLAP Cubes, Sencha Touch, PhoneGap. M-F, 9-5. Send resume to Job #11, Cross Commerce Media, Inc. 130 Madison Ave, 4th Fl. NY, NY 10016" %>
+		 	<% sometext = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" %>
 		   <%= text_area_tag "description", sometext, rows: "10", class: "form-control",  onclick: "this.focus();this.select()" %>
 		   <br>
 		   <%= submit_tag 'Submit' %>
